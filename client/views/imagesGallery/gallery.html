@@ -1,0 +1,10 @@
+<div class="search-box">
+    <input type="text" class="search-term" placeholder="Search" ng-model="vm.form.searchTerm">
+    <button class="flickr-search btn btn-red " ng-click="vm.searchFlickr(true, vm.provider.flickr)">flickr</button>
+    <button class="flickr-search btn btn-red " ng-click="vm.searchPixabay(true, 'Pixabay')">Pixabay</button>
+</div>
+<image-gallery datasource="vm.photos"
+               get-next-page="vm.callback(isNewSearch)"
+               end-of-results="vm.endOfResults"
+               pending-status="vm.pending">
+</image-gallery>

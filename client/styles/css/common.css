@@ -1,0 +1,174 @@
+.search-box {
+    text-align: center;
+}
+
+/* Inputs */
+input[type="text"] {
+    margin: 0 auto;
+    width: 400px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type="text"].search-term {
+    padding: 10px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+input[type="text"].search-term:focus {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+/* End Of Inputs */
+
+/* Gallery */
+
+.preloader {
+    background: url(../images/lazyPreloader.gif) 50% no-repeat;
+    background-size: 50px;
+}
+
+.pending {
+    width: 100%;
+    height: 100px;
+    background: url(../images/pendingLoader.gif) 50% 10px no-repeat;
+    background-size: 55px;
+    clear: both;
+}
+
+.gallery-container {
+    width: 100%;
+    background: url(../images/content_bg.png) repeat;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border-radius: 5px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.gallery-container .buttons-cont {
+    clear: both;
+    bottom: 10px;
+    text-align: center;
+}
+
+.gallery-container img {
+    width: 175px;
+    height: 175px;
+    float: left;
+    margin: 10px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* End Of Gallery */
+
+/* History */
+
+.history-container table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.history-container table th {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.history-container table td {
+    color: #b7babb;
+    text-align: left;
+    padding: 7px 0 7px 10px;
+    cursor: pointer;
+}
+
+.history-container table tr:hover {
+    color: #fff;
+    background: #222932;
+}
+
+.history-container .buttons-cont {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.no-history {
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size:18px;
+}
+
+/* End Of History */
+
+/* Buttons */
+
+button.btn {
+    display: inline-block;
+    color: #666;
+    background-color: #eee;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+button.btn:hover {
+    background-color: #e3e3e3;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+button.btn:active {
+    background-color: #CCC;
+    border-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Blue Buttons */
+
+button.btn.btn-blue {
+    background-color: #699DB6;
+    border-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+button.btn.btn-blue:hover {
+    background-color: #4F87A2;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+button.btn.btn-blue:active {
+    background-color: #3C677B;
+    border-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Red Buttons */
+
+button.btn.btn-red {
+    background-color: #E48681;
+    border-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}
+
+button.btn.btn-red:hover {
+    background-color: #DA4F49;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+button.btn.btn-red:active {
+    background-color: #B32C24;
+    border-color: rgba(0, 0, 0, 0.9);
+}
+
+/* End Of Button */

@@ -1,0 +1,11 @@
+<div class="gallery-container" ng-show="showGallery">
+    <img ng-repeat="photo in datasource"
+         image-lazy-src="{{photo}}"
+         class="preloader"
+         preload-time="500">
+
+    <div class="pending" ng-show="isPending"></div>
+    <div class="buttons-cont" ng-show="showLoadMore && !isPending">
+        <button class="load-more-btn btn btn-blue" ng-click="LoadNext()">Load More ...</button>
+    </div>
+</div>

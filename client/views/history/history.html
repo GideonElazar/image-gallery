@@ -1,0 +1,26 @@
+<div class="history-container">
+    <div class="buttons-cont">
+        <button class="flickr-search btn btn-red" ng-click="vm.clearHistory()">Reset</button>
+    </div>
+
+    <table ng-show="vm.HistoryArr">
+        <thead>
+        <tr>
+            <th>Term</th>
+            <th>Source</th>
+            <th>Time</th>
+            <th>Total Results</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="history in vm.HistoryArr" ui-sref="gallery({term:history.term, source:history.source})">
+            <td>{{history.term}}</td>
+            <td>{{history.source}}</td>
+            <td>{{history.time}}</td>
+            <td>{{history.resultsCount}}</td>
+        </tr>
+
+        <div class="no-history" ng-show="!vm.HistoryArr">
+            <span> NO HISTORY</span>
+        </div>
+</div>
